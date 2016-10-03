@@ -1,0 +1,18 @@
+{
+  "databases": {
+    "mongodb": {
+      "url": "localhost",
+      "port": 27017,
+      "db": "apifreelance",
+      "user": "master",
+      "password": "admin123456"
+    },
+    "mongodb_mlab": {
+      "url": "ds033976.mlab.com",
+      "port": "33976",
+      "db": "demo-mean",
+      "user": "server",
+      "password": "admin123456"
+    }
+  }
+}

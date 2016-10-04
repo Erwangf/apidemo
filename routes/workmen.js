@@ -14,23 +14,6 @@ var updateObject = require("../lib/tools").updateObject;
 /* ==================================================================================================================*/
 
 
-
-
-/**
- * This RESTful API is constituted of 5 HTTP Methods :
- * - GET
- * - DELETE
- * - PUT
- * - PATCH
- * - DELETE
- *
- * There is two ways of using this API :
- * - on a specific item, with the url /workmen/{workmenId}
- * - on the entire collection, with the url /workmen
- *
- * Every method is described above, and the return format is always JSON.
- */
-
 /**
  * GET : Entire collection
  * @description Return the entire collection of workmen : an array of objects

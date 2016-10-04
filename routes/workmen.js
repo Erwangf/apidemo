@@ -69,6 +69,7 @@ router.post('/', function (req, res, next) {
     var skills = req.body.skills;
     var description = req.body.description;
     var username = req.body.username;
+    var city = req.body.city;
 
     Workman.findOne({username: username})
         .then(function (workman) {
@@ -81,7 +82,8 @@ router.post('/', function (req, res, next) {
                 surname: surname,
                 skills: skills,
                 description: description,
-                username: username
+                username: username,
+                city : city
             });
 
             return newWorkman.save(null);
@@ -132,7 +134,8 @@ router.patch('/:id', function (req, res, next) {
     var surname = req.body.surname;
     var skills = req.body.skills;
     var description = req.body.description;
-    var update = {name, surname, skills, description};
+    var city = req.body.city;
+    var update = {name, surname, skills, description, city};
     console.log(update);
 
     Workman.findOne({id: id})
